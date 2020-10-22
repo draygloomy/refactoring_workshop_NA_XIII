@@ -12,15 +12,15 @@ class ICommunicationPoint;
 namespace Application
 {
 
-class Controller : public IEventHandler
-{
-public:
-    Controller(ICommunicationPoint& communicationPoint);
+    class Controller : public IEventHandler
+    {
+    public:
+        Controller(ICommunicationPoint &communicationPoint);
 
-    void handle(std::unique_ptr<IEvent> ev) override;
+        void handle(std::unique_ptr<IEvent> ev) override;
 
-private:
-    ICommunicationPoint& communicationPoint_;
-};
+    private:
+        ICommunicationPoint &communicationPoint_;
+    };
 
-}  // namespace Application
+} // namespace Application
