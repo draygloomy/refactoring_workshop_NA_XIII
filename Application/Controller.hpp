@@ -6,7 +6,7 @@
 #include "IEvent.hpp"
 
 #include <memory>
-// testing comment
+
 class ICommunicationPoint;
 
 namespace Application
